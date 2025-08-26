@@ -31,10 +31,10 @@ const numeros = '0123456789'
 const simbolos = '!@#$%¨&*.'
 geraSenha();
 
-function geraSenha() {
+function geraSenha(){
     let senha = '';
-    for (let i = 0; i < tamanhoSenha; i++) {
-        let numeroAleatorio = Math.random() * letrasMaiusculas.length;
+    for (let i=0; i< tamanhoSenha; i++) {
+        let numeroAleatorio = Math.random()*letrasMaiusculas.length;
         numeroAleatorio = Math.floor(numeroAleatorio);
         senha = senha + letrasMaiusculas[numeroAleatorio];
     }
